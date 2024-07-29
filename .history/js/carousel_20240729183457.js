@@ -44,9 +44,9 @@
   function setaNoticia(botaoControlador) {
     noticias.forEach(function(noticia) {
       noticia.style.display = 'none';
-      noticia.style.opacity = 0;
       if(botaoControlador.dataset.sliderItem === noticia.dataset.noticia) {
         noticia.style.display = 'block';
+        noticia.style.opacity = 0;
       }
       efeitoFade(noticia);
     });
@@ -55,7 +55,7 @@
   function efeitoFade(noticia) {
     setTimeout(function() {
       noticia.style.opacity = 1;
-    }, 500);
+    },500);
   }
 
 })();

@@ -47,15 +47,15 @@
       noticia.style.opacity = 0;
       if(botaoControlador.dataset.sliderItem === noticia.dataset.noticia) {
         noticia.style.display = 'block';
+        efeitoFade(noticia);
       }
-      efeitoFade(noticia);
     });
   }
 
   function efeitoFade(noticia) {
     setTimeout(function() {
       noticia.style.opacity = 1;
-    }, 500);
+    },500);
   }
 
 })();
