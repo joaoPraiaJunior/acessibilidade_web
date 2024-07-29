@@ -25,7 +25,6 @@
 </head>
 <body>
 
-  <div data-js="conteudo-fora-do-dialogo">
   <a href="#conteudoPrincipal" class="pularNavegacao">Pular para conteúdo principal</a>
 
   <header class="cabecalho container">
@@ -181,7 +180,6 @@
 
         <div class="secaoPlanos-plano secaoPlanos-plano--mega">
           <h3 class="secaoPlanos-plano-titulo"><span class="escondeVisualmente">Plano</span> Mega</h3>
-          <!--Sempre bom esconder visualmente algumas informações que fariam sentido para os leitores de tela-->
           <strong class="secaoPlanos-plano-preco">
             R$ 1000
           </strong>
@@ -208,7 +206,7 @@
 
         <li id="new0" class="listaDeArtigos-item">
           <article class="listaDeArtigos-artigo">
-            <img src="img/10-aplicativos-mais-baixados.png" class="listaDeArtigos-artigo-img" alt>
+            <img src="img/10-aplicativos-mais-baixados.png" class="listaDeArtigos-artigo-img" alt="Teclado da Apple e um celular Android">
             <h2 class="listaDeArtigos-artigo-titulo">
               Conheça os 10 aplicativos mais badalados do momento
             </h2>
@@ -223,7 +221,7 @@
 
         <li id="new1" class="listaDeArtigos-item">
           <article class="listaDeArtigos-artigo">
-            <img src="img/ux-usabilidade.jpg" class="listaDeArtigos-artigo-img">
+            <img src="img/ux-usabilidade.jpg" class="listaDeArtigos-artigo-img" alt="Pessoa segurando um celular">
             <h2 class="listaDeArtigos-artigo-titulo">
               Usabilidade: Entenda os benefícios de treinar sua equipe em UX
             </h2>
@@ -298,10 +296,34 @@
           </figure>
         </a>
 
-        <button class="secaoDestaques-form-botao btnPadrao btnPadrao--pequeno" id="abreDialog" data-js="botao-de-abrir-dialogo">
+        <button class="secaoDestaques-form-botao btnPadrao btnPadrao--pequeno" id="abreDialog">
           Receber destaques por email
         </button>
       </div>
+
+      <div class="dialogNewsletter" id="dialogNewsletter">
+        <div class="dialogNewsletter-body">
+
+          <h2 class="dialogNewsletter-titulo">News sem spam</h2>
+          <h3 class="dialogNewsletter-texto">
+            Assine nossa newsletter para receber notícias técnicas sem spam!
+          </h3>
+          <form class="dialogNewsletter-form">
+            <label class="dialogNewsletter-label">
+              Email:
+            </label>
+            <input type="text" class="dialogNewsletter-campo" placeholder="Digite seu e-mail...">
+            <button class="dialogNewsletter-btn">
+              Assinar newsletter
+            </button>
+            <button class="dialogNewsletter-fechar">
+              X
+            </button>
+          </form>
+        </div>
+        <div class="dialogNewsletter-overlay"></div>
+      </div> <!--fim .dialogNewsletter-->
+
     </section> <!--fim .secaoDestaques-->
 
     <section class="secaoContato">
@@ -451,33 +473,7 @@
     </div>
 
   </footer>
-  </div>
-
-  <div class="dialogNewsletter" id="dialogNewsletter" data-js="dialogo-newsletter" role="dialog" aria-labelledby="tituloDialog">
-    <div class="dialogNewsletter-body" data-js="dialogo-body">
-
-      <h2 class="dialogNewsletter-titulo" id="tituloDialog">News sem spam</h2>
-      <h3 class="dialogNewsletter-texto">
-        Assine nossa newsletter para receber notícias técnicas sem spam!
-      </h3>
-      <form class="dialogNewsletter-form">
-        <label for="email" class="dialogNewsletter-label">
-          Email:
-        </label>
-        <input id="email" type="email" class="dialogNewsletter-campo" placeholder="Digite seu e-mail..." data-js="input-de-email">
-        <button type="submit" class="dialogNewsletter-btn">
-          Assinar newsletter
-        </button>
-        <button type="button" class="dialogNewsletter-fechar" data-js="fechar-dialogo" aria-label="Fechar janela de newslleter">
-          Fechal janela de newsletter
-        </button>
-      </form>
-    </div>
-    <div class="dialogNewsletter-overlay" data-js="dialogo-overlay"></div>
-  </div> <!--fim .dialogNewsletter-->
-
   <script src="js/carousel.js"></script>
-  <script src="js/inert.js"></script>
   <script src="js/dialog.js"></script>
 </body>
 </html>

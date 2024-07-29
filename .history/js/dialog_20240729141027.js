@@ -1,8 +1,8 @@
 
-(function () {
+(function() {
 
   'user strict';
-
+  
   const elementos = {
     botaoDeAbrirDialogo: '[data-js="botao-de-abrir-dialogo"]',
     fecharDialogo: '[data-js="fechar-dialogo"]',
@@ -20,30 +20,22 @@
   const dialogoOverlay = document.querySelector(elementos.dialogoOverlay);
   const inputDeEmail = document.querySelector(elementos.inputDeEmail);
   const conteudoForaDoDialogo = document.querySelector(elementos.conteudoForaDoDialogo);
-
-
+  
+  
   // Quando abrir a dialog...
-  botaoDeAbrirDialogo.addEventListener('click', function () {
+  botaoDeAbrirDialogo.addEventListener('click', function() {
     dialogoNewsletter.classList.add('dialogNewsletter--aberto');
     inputDeEmail.focus();
-    conteudoForaDoDialogo.inert = true;
-    document.body.style.overflowY = 'hidden';
+    conteudoForaDoDialogo.inert = 'true';
 
 
   });
-
+  
   function fechandoDialogoDeNewslleter() {
     document.activeElement.blur();
-    dialogoNewsletter.classList.remove('dialogNewsletter--aberto');
-    conteudoForaDoDialogo.inert = false;
-    botaoDeAbrirDialogo.focus();
-    document.body.style.overflowY = 'auto';
+    dialogoNewsletter.classList.remove('dialogNewsletter--aberto');     
   }
-
+  
   // Listeners
-  fecharDialogo.addEventListener('click', fechandoDialogoDeNewslleter);
-  dialogoOverlay.addEventListener('click', fechandoDialogoDeNewslleter);
-  document.addEventListener('keyup', function (evento) {
-    if (evento.key === 'Escape') fechandoDialogoDeNewslleter();
-  });
+ fecharDialogo.addEventListener('click', fechandoDialogoDeNewslleter);
 })();

@@ -42,7 +42,6 @@
 
   // Listeners
   fecharDialogo.addEventListener('click', fechandoDialogoDeNewslleter);
-  dialogoOverlay.addEventListener('click', fechandoDialogoDeNewslleter);
   document.addEventListener('keyup', function (evento) {
     if (evento.key === 'Escape') fechandoDialogoDeNewslleter();
   });

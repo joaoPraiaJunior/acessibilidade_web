@@ -27,7 +27,7 @@
     dialogoNewsletter.classList.add('dialogNewsletter--aberto');
     inputDeEmail.focus();
     conteudoForaDoDialogo.inert = true;
-    document.body.style.overflowY = 'hidden';
+    console.log(document)
 
 
   });
@@ -37,13 +37,8 @@
     dialogoNewsletter.classList.remove('dialogNewsletter--aberto');
     conteudoForaDoDialogo.inert = false;
     botaoDeAbrirDialogo.focus();
-    document.body.style.overflowY = 'auto';
   }
 
   // Listeners
   fecharDialogo.addEventListener('click', fechandoDialogoDeNewslleter);
-  dialogoOverlay.addEventListener('click', fechandoDialogoDeNewslleter);
-  document.addEventListener('keyup', function (evento) {
-    if (evento.key === 'Escape') fechandoDialogoDeNewslleter();
-  });
 })();
