@@ -29,6 +29,8 @@
     inputDeEmail.focus();
     conteudoForaDoDialogo.inert = true;
     document.body.style.overflowY = 'hidden';
+
+
   });
 
   function fechandoDialogoDeNewslleter() {

@@ -55,7 +55,7 @@
   function efeitoFade(noticia) {
     setTimeout(function() {
       noticia.style.opacity = 1;
-    }, 500);
+    },500);
   }
 
 })();

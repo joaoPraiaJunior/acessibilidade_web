@@ -9,7 +9,6 @@
   
   const botoesControladores = document.querySelectorAll(elementos.botoesControladores);
   const noticias = document.querySelectorAll(elementos.noticias);
-  noticias[0].style.opacity = '1';
 
   // Percorre todos os botoes controladores
   botoesControladores.forEach(function(botaoControlador) {
@@ -43,19 +42,12 @@
 
   function setaNoticia(botaoControlador) {
     noticias.forEach(function(noticia) {
-      noticia.style.display = 'none';
-      noticia.style.opacity = 0;
-      if(botaoControlador.dataset.sliderItem === noticia.dataset.noticia) {
+      noticia.computedStyleMap.display = 'none';
+
+      if(botaoControlador.dataset.noticia === noticia.dataset.noticia) {
         noticia.style.display = 'block';
       }
-      efeitoFade(noticia);
     });
-  }
-
-  function efeitoFade(noticia) {
-    setTimeout(function() {
-      noticia.style.opacity = 1;
-    }, 500);
   }
 
 })();

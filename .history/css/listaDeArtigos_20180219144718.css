@@ -17,23 +17,16 @@
   margin: 0 auto;
   width: 100%;
   display: none;
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.listaDeArtigos-item:first-child {
-  display: inline-block;
 }
 
 
-
-/* .listaDeArtigos-item:not(:target):first-child{
+.listaDeArtigos-item:not(:target):first-child{
   display: inline-block;
 }
 
 .listaDeArtigos-item:target {
   display: inline-block;
-} */
+}
 
 
 
