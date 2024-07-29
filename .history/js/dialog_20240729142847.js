@@ -23,7 +23,8 @@
 
 
   // Quando abrir a dialog...
-  botaoDeAbrirDialogo.addEventListener('click', function () {
+  botaoDeAbrirDialogo.addEventListener('click', function (evento) {
+    evento.preventDefault();
     dialogoNewsletter.classList.add('dialogNewsletter--aberto');
     inputDeEmail.focus();
     conteudoForaDoDialogo.inert = true;
@@ -42,8 +43,4 @@
 
   // Listeners
   fecharDialogo.addEventListener('click', fechandoDialogoDeNewslleter);
-  dialogoOverlay.addEventListener('click', fechandoDialogoDeNewslleter);
-  document.addEventListener('keyup', function (evento) {
-    if (evento.key === 'Escape') fechandoDialogoDeNewslleter();
-  });
 })();

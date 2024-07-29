@@ -25,7 +25,6 @@
 </head>
 <body>
 
-  <div data-js="conteudo-fora-do-dialogo">
   <a href="#conteudoPrincipal" class="pularNavegacao">Pular para conteúdo principal</a>
 
   <header class="cabecalho container">
@@ -302,6 +301,30 @@
           Receber destaques por email
         </button>
       </div>
+
+      <div class="dialogNewsletter" id="dialogNewsletter" data-js="dialogo-newsletter" role="dialog" aria-labelledby="tituloDialog">
+        <div class="dialogNewsletter-body" data-js="dialogo-body">
+
+          <h2 class="dialogNewsletter-titulo" id="tituloDialog">News sem spam</h2>
+          <h3 class="dialogNewsletter-texto">
+            Assine nossa newsletter para receber notícias técnicas sem spam!
+          </h3>
+          <form class="dialogNewsletter-form">
+            <label for="email" class="dialogNewsletter-label">
+              Email:
+            </label>
+            <input id="email" type="email" class="dialogNewsletter-campo" placeholder="Digite seu e-mail..." data-js="input-de-email">
+            <button type="submit" class="dialogNewsletter-btn">
+              Assinar newsletter
+            </button>
+            <button type="button" class="dialogNewsletter-fechar" data-js="fechar-dialogo">
+              X
+            </button>
+          </form>
+        </div>
+        <div class="dialogNewsletter-overlay" data-js="dialogo-overlay"></div>
+      </div> <!--fim .dialogNewsletter-->
+
     </section> <!--fim .secaoDestaques-->
 
     <section class="secaoContato">
@@ -451,33 +474,8 @@
     </div>
 
   </footer>
-  </div>
-
-  <div class="dialogNewsletter" id="dialogNewsletter" data-js="dialogo-newsletter" role="dialog" aria-labelledby="tituloDialog">
-    <div class="dialogNewsletter-body" data-js="dialogo-body">
-
-      <h2 class="dialogNewsletter-titulo" id="tituloDialog">News sem spam</h2>
-      <h3 class="dialogNewsletter-texto">
-        Assine nossa newsletter para receber notícias técnicas sem spam!
-      </h3>
-      <form class="dialogNewsletter-form">
-        <label for="email" class="dialogNewsletter-label">
-          Email:
-        </label>
-        <input id="email" type="email" class="dialogNewsletter-campo" placeholder="Digite seu e-mail..." data-js="input-de-email">
-        <button type="submit" class="dialogNewsletter-btn">
-          Assinar newsletter
-        </button>
-        <button type="button" class="dialogNewsletter-fechar" data-js="fechar-dialogo" aria-label="Fechar janela de newslleter">
-          Fechal janela de newsletter
-        </button>
-      </form>
-    </div>
-    <div class="dialogNewsletter-overlay" data-js="dialogo-overlay"></div>
-  </div> <!--fim .dialogNewsletter-->
-
   <script src="js/carousel.js"></script>
-  <script src="js/inert.js"></script>
   <script src="js/dialog.js"></script>
+  <script src="js/inert.js"></script>
 </body>
 </html>
