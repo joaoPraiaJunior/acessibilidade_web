@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Deixar a aplicação para que os usuários consigam dar o zoom-->
   <title>Apeperia - aplicativos sob medida</title>
 
   <link rel="stylesheet" href="css/reset.css">
@@ -21,6 +20,8 @@
   <link rel="stylesheet" href="css/secaoInstitucional.css">
   <link rel="stylesheet" href="css/rodape.css">
   <link rel="stylesheet" href="css/dialogNewsletter.css">
+
+  <meta name="viewport" content="width=device-width">
 
 </head>
 <body>
@@ -66,7 +67,7 @@
     </nav>
   </header>
 
-  <main class="conteudo"> <!--role="main" muda o papel de um elmento html caso não for semântico-->
+  <main class="conteudo">
     <section class="secaoDestaque">
       <h1 class="secaoDestaque-titulo" id="conteudoPrincipal">
         APLICATIVOS NA MEDIDA
@@ -207,6 +208,7 @@
         <li id="new0" class="listaDeArtigos-item">
           <article class="listaDeArtigos-artigo">
             <img src="img/10-aplicativos-mais-baixados.png" class="listaDeArtigos-artigo-img" alt="Teclado da Apple e um celular Android">
+            <!--longdesc atributo que especifica um hiperlink para uma descrição detalhada de uma imagem -->
             <h2 class="listaDeArtigos-artigo-titulo">
               Conheça os 10 aplicativos mais badalados do momento
             </h2>
@@ -278,7 +280,6 @@
         <h2 class="secaoDestaques-titulo tituloPadrao">DESTAQUES</h2>
 
         <a href="http://blog.apeperia.com.br/design/conheca-primeiras-etapas-criacao-logotipo-teste-teste" class="secaoDestaques-link" aria-labelledby="tituloDestaque1">
-          <!--aria-labelledby é uma técnica de acessibilidade para associar um elemento com outro-->
           <figure class="secaoDestaques-destaque">
             <img src="img/comecando-criar-logotipo.png" class="secaoDestaques-destaque-img" alt="Ferramentas de designer. Ilustração">
             <figcaption class="secaoDestaques-destaque-titulo" id="tituloDestaque1">
@@ -366,7 +367,6 @@
           <div class="contatoCampo">
             <label>Endereço: </label>
             <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro">
-            <!--Para os leitores de tela o readonly legível o disabled não é no caso de campos de formulário-->
           </div>
 
           <div class="contatoCampo">
@@ -391,7 +391,6 @@
 
           <div class="contatoCampo">
             <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox" id="receberEmail">
-            <!--Para alguns checkboxes personalizados utiliza-se escoder o elemento sem utilizar o display none ou visibility hidden-->
             <label class="contatoCampo-label" for="receberEmail">Receber destaques por email</label>
           </div>
 
@@ -430,7 +429,6 @@
 
         <video src="img/formacao-java.mp4" class="secaoInstitucional-video" controls>
           <track src="img/legenda-portugues-brasil.vtt" kind="subtitles" srclang="pt-br" label="Português (Brasil)">
-          <!-- track é um Elemento para legendas-->
         </video>
 
       </div>
