@@ -31,7 +31,7 @@
 }
 
 .contatoCampo-checkbox:checked + .contatoCampo-label:before {
-  content: '';
+  content: 'x';
   color: #fff;
   background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
   border-color: #015fbe;

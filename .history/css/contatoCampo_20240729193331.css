@@ -5,10 +5,6 @@
   position: relative;
 }
 
-.contatoCampo-label {
-  position: relative;
-}
-
 .contatoCampo-label:before {
   content:'';
   vertical-align: middle;
@@ -31,7 +27,7 @@
 }
 
 .contatoCampo-checkbox:checked + .contatoCampo-label:before {
-  content: '';
+  content: 'x';
   color: #fff;
   background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
   border-color: #015fbe;
