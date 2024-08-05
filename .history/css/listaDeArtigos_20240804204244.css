@@ -59,7 +59,7 @@
 }
 
 .listaDeArtigos-artigo-link {
-  color: #bd0000;
+  color: #EB5757;
   font-weight: bold;
 }
 
@@ -90,7 +90,7 @@
   outline: 0;
 }
 
-.listaDeArtigos-slider-item--ativo {  
+.listaDeArtigos-slider-item--ativo {
   background: hsla(200, 70%, 0%, .6);
 }
 

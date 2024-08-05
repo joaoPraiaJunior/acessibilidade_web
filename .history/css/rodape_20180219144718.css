@@ -50,10 +50,6 @@
   text-decoration: underline;
 }
 
-.secaoInstitucional-telefone a{
-  color: #4d4d4d;
-}
-
 @media (min-width: 830px) {
 
   .rodape-logo {
