@@ -98,6 +98,8 @@
             }
         });
 
+        console.log(campo)
+
         if (!validadorDeCampo) {
             campo.setCustomValidity(mensagemCustomizada);
             campo.parentElement.classList.add('contatoCampo--erro');
